@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <!-- ===== TOP BAR ===== -->
+  
     <RelativeLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
