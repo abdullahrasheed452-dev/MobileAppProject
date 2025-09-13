@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/call_bg">
 
-    
     <LinearLayout
         android:id="@+id/centerBlock"
         android:layout_width="wrap_content"
@@ -24,8 +23,6 @@
             android:background="@drawable/rounded_bg"
             android:clipToOutline="true" />
 
-
-        
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
@@ -36,7 +33,6 @@
             android:textStyle="bold"
             android:textColor="@android:color/white" />
 
-        
         <TextView
             android:id="@+id/timer"
             android:layout_width="wrap_content"
@@ -47,7 +43,6 @@
             android:textColor="#EDEDED" />
     </LinearLayout>
 
-    
     <LinearLayout
         android:id="@+id/bottomControls"
         android:layout_width="match_parent"
@@ -59,7 +54,6 @@
         android:gravity="center"
         android:layout_marginBottom="20dp">
 
-        
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -71,13 +65,9 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/list"
-                app:tint="@android:color/white"
-
-                 />
-
+                app:tint="@android:color/white" />
         </LinearLayout>
 
-        
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -90,13 +80,9 @@
                 android:layout_height="64dp"
                 android:src="@drawable/phone"
                 android:background="@android:color/transparent"
-                android:scaleType="centerInside"
-            />
-
-
+                android:scaleType="centerInside" />
         </LinearLayout>
 
-       
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -108,8 +94,7 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/volume"
-                app:tint="@android:color/white"
-                 />
+                app:tint="@android:color/white" />
         </LinearLayout>
     </LinearLayout>
 
