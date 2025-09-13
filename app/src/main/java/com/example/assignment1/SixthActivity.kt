@@ -1,0 +1,47 @@
+package com.example.assignment1
+
+import android.content.Intent
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+
+class SixthActivity : AppCompatActivity() {
+
+    private val handler = Handler(Looper.getMainLooper())
+    private val goToSeventh = Runnable {
+        startActivity(Intent(this, SeventhActivity::class.java))
+        // no finish(): back from 7th will return to 6th by default
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.sixthpage)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        handler.removeCallbacks(goToSeventh)
+        handler.postDelayed(goToSeventh, 3000) // 6 seconds
+    }
+
+    override fun onPause() {
+        super.onPause()
+        handler.removeCallbacks(goToSeventh)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        handler.removeCallbacks(goToSeventh)
+    }
+}
