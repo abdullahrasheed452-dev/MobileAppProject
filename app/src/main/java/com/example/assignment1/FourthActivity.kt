@@ -21,21 +21,21 @@ class FourthActivity : AppCompatActivity() {
             insets
         }
 
-        // Find views by ID
+        
         val btnLogin = findViewById<TextView>(R.id.btnLogin)
         val tvSignup = findViewById<TextView>(R.id.tvSignup)
 
-        // Navigate to FifthActivity when "Login" button is pressed
+        
         btnLogin.setOnClickListener {
             val intent = Intent(this, FifthActivity::class.java)
             startActivity(intent)
         }
 
-        // Navigate back to ThirdActivity when "Signup" text is clicked
+        
         tvSignup.setOnClickListener {
             val intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
-            finish() // Close FourthActivity so it's removed from back stack
+            finish() 
         }
     }
 }
