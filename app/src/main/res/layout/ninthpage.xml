@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginTop="25dp">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back2"
+            android:contentDescription="Back" />
+
+        <!-- Avatar -->
+        <TextView
+            android:id="@+id/avatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:text="IS"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:background="@drawable/bg_avatar_circle" />
+
+        <!-- Chat Name -->
+        <TextView
+            android:id="@+id/chatName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="internshala"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Video Icon -->
+        <ImageView
+            android:id="@+id/videoIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/videocall"
+            android:contentDescription="Video Call" />
+
+        <!-- Info Icon -->
+        <ImageView
+            android:id="@+id/infoIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/info"
+            android:contentDescription="Info" />
+
+    </LinearLayout>
+
+    <!-- Chat Body -->
+    <RelativeLayout
+        android:id="@+id/chatBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:layout_above="@id/inputBar">
+
+        <!-- Centered Timestamp -->
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4: 49 PM"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="72dp" />
+    </RelativeLayout>
+
+    <!-- Hello Button -->
+    <TextView
+        android:id="@+id/btnHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/inputBar"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="Hello"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/bg_hello"
+        android:gravity="center"/>
+
+
+
+    <!-- Bottom Input Bar -->
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="35dp">
+
+        <!-- Message Box Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_input_bar"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <!-- Camera Icon -->
+            <ImageView
+                android:id="@+id/cameraIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/cam4"
+                android:contentDescription="Camera" />
+
+            <!-- Message Input -->
+            <EditText
+                android:id="@+id/messageInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:hint="Message..."
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:textColorHint="#9E9E9E"
+                android:singleLine="true"
+                android:imeOptions="actionSend" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="15dp">
+
+                <!-- Mic Icon -->
+                <ImageView
+                    android:id="@+id/micIcon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/mic"
+                    android:contentDescription="Voice" />
+
+                <!-- Gallery Icon -->
+                <ImageView
+                    android:id="@+id/galleryIcon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/gallery"
+                    android:contentDescription="Gallery" />
+
+                <!-- Sticker Icon -->
+                <ImageView
+                    android:id="@+id/stickerIcon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/sticker"
+                    android:contentDescription="Stickers" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
