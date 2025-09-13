@@ -14,7 +14,7 @@
         android:paddingStart="12dp"
         android:paddingEnd="12dp">
 
-        <!-- Camera Icon -->
+        
         <ImageView
             android:id="@+id/ivCamera"
             android:layout_width="24dp"
@@ -23,7 +23,7 @@
             android:src="@drawable/instacam"
             android:contentDescription="@null" />
 
-        <!-- Title -->
+        
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
             android:fontFamily="@font/poppins_bold"
             android:textSize="20sp" />
 
-        <!-- Share Icon -->
+        
         <ImageView
             android:id="@+id/ivRight"
             android:layout_width="24dp"
@@ -44,7 +44,7 @@
             android:src="@drawable/igshare"
             android:contentDescription="@null" />
 
-        <!-- IGTV Icon (left of share) -->
+        
         <ImageView
             android:id="@+id/igTv"
             android:layout_width="24dp"
@@ -56,7 +56,7 @@
             android:contentDescription="@null" />
     </RelativeLayout>
 
-    <!-- Divider under Top Bar -->
+    
     <View
         android:id="@+id/dividerTop"
         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
         android:layout_below="@id/topBar"
         android:background="#EEEEEE" />
 
-    <!-- ===== STORIES (HORIZONTAL) ===== -->
+   
     <HorizontalScrollView
         android:id="@+id/storiesScroll"
         android:layout_width="match_parent"
@@ -82,7 +82,7 @@
             android:paddingEnd="12dp"
             android:gravity="center_vertical">
 
-            <!-- Story 1 -->
+           
             <RelativeLayout
                 android:id="@+id/story1"
                 android:layout_width="72dp"
@@ -120,7 +120,7 @@
                     android:textColor="#8B8B8B" />
             </RelativeLayout>
 
-            <!-- Story 2 -->
+            
             <RelativeLayout
                 android:id="@+id/story2"
                 android:layout_width="72dp"
@@ -157,7 +157,7 @@
                     android:textColor="#8B8B8B" />
             </RelativeLayout>
 
-            <!-- Story 3 -->
+            
             <RelativeLayout
                 android:id="@+id/story3"
                 android:layout_width="72dp"
@@ -194,7 +194,7 @@
                     android:textColor="#8B8B8B" />
             </RelativeLayout>
 
-            <!-- Story 4 -->
+            
             <RelativeLayout
                 android:id="@+id/story4"
                 android:layout_width="72dp"
@@ -231,7 +231,7 @@
                     android:textColor="#8B8B8B" />
             </RelativeLayout>
 
-            <!-- Story 5 -->
+            
             <RelativeLayout
                 android:id="@+id/story5"
                 android:layout_width="72dp"
@@ -268,7 +268,7 @@
                     android:textColor="#8B8B8B" />
             </RelativeLayout>
 
-            <!-- Story 6 -->
+            
             <RelativeLayout
                 android:id="@+id/story6"
                 android:layout_width="72dp"
@@ -306,7 +306,7 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <!-- Divider below Stories -->
+    
     <View
         android:id="@+id/dividerStories"
         android:layout_width="match_parent"
@@ -314,7 +314,7 @@
         android:layout_below="@id/storiesScroll"
         android:background="#EEEEEE" />
 
-    <!-- ===== SCROLLABLE POST AREA ONLY ===== -->
+    
     <ScrollView
         android:id="@+id/postScroll"
         android:layout_width="match_parent"
@@ -330,7 +330,7 @@
             android:orientation="vertical"
             android:paddingBottom="24dp">
 
-            <!-- Post Header -->
+            
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
@@ -381,7 +381,7 @@
                     android:contentDescription="@null" />
             </RelativeLayout>
 
-            <!-- Post Image -->
+            
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="500dp">
@@ -393,7 +393,7 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/tokyo" />
 
-                <!-- Photo Count Badge -->
+               
                 <TextView
                     android:layout_width="36dp"
                     android:layout_height="24dp"
@@ -406,7 +406,7 @@
                     android:backgroundTint="#8B3E3E" />
             </RelativeLayout>
 
-            <!-- Actions -->
+            
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -437,7 +437,7 @@
                         android:src="@drawable/share" />
                 </LinearLayout>
 
-                <!-- Center Page Indicator -->
+                
                 <ImageView
                     android:id="@+id/pageIndicator"
                     android:layout_width="wrap_content"
@@ -455,7 +455,7 @@
                     android:src="@drawable/save" />
             </RelativeLayout>
 
-            <!-- Likes -->
+          
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -466,7 +466,7 @@
                 android:textSize="13sp"
                 android:textColor="#111111" />
 
-            <!-- Caption -->
+         
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -479,7 +479,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- ===== FIXED BOTTOM NAV ===== -->
+    
     <RelativeLayout
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
@@ -497,7 +497,7 @@
             android:contentDescription="@null" />
     </RelativeLayout>
 
-    <!-- Home Indicator Pill -->
+   
     <View
         android:layout_width="100dp"
         android:layout_height="4dp"
