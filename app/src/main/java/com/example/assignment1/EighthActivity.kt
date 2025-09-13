@@ -16,7 +16,7 @@ class EighthActivity : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
     private val goToNinth = Runnable {
         startActivity(Intent(this, NinthActivity::class.java))
-        // No finish(): Back from 9th returns to 8th
+        
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +30,7 @@ class EighthActivity : AppCompatActivity() {
             insets
         }
 
-        // Camera icons
+        
         findViewById<ImageView>(R.id.viiiCamera1)?.setOnClickListener { openCamera() }
         findViewById<ImageView>(R.id.viiiCamera2)?.setOnClickListener { openCamera() }
     }
@@ -38,7 +38,7 @@ class EighthActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         handler.removeCallbacks(goToNinth)
-        handler.postDelayed(goToNinth, 3000) // 6 seconds
+        handler.postDelayed(goToNinth, 3000) 
     }
 
     override fun onPause() {
@@ -53,9 +53,9 @@ class EighthActivity : AppCompatActivity() {
 
     private fun openCamera() {
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        // Optional: ensure there is an app to handle it
+        
 
-            startActivity(intent) // launches system camera; not capturing a result here
+            startActivity(intent) 
         }
     }
 
