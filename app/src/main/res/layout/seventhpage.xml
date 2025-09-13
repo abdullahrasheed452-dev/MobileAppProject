@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <!-- ===== TOP SEARCH BAR ===== -->
+   
     <RelativeLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
 
 
 
-        <!-- Clear Text -->
+        
         <TextView
             android:id="@+id/clearText"
             android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             android:textColor="#8B3E3E" />
     </RelativeLayout>
 
-    <!-- ===== TAB BAR ===== -->
+    
     <LinearLayout
         android:id="@+id/tabBar"
         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
             android:orientation="vertical"
             android:gravity="center">
 
-            <!-- Text -->
+            
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
-            <!-- Underline -->
+            
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
@@ -111,7 +111,7 @@
             android:textSize="14sp" />
     </LinearLayout>
 
-    <!-- ===== SCROLLABLE LIST ===== -->
+    
     <ScrollView
         android:id="@+id/searchResultsScroll"
         android:layout_width="match_parent"
@@ -125,7 +125,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Result Item 1 -->
+           
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -163,7 +163,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Result Item 2 -->
+            
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -202,7 +202,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Result Item 3 -->
+           
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -241,7 +241,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Result Item 4 -->
+            
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -280,7 +280,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Result Item 5 -->
+           
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -319,7 +319,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Result Item 6 -->
+           
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
