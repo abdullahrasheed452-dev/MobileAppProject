@@ -22,11 +22,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Delay for 3 seconds, then open SecondActivity
+        
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
-            finish() // Optional: finish first page so user can't go back
-        }, 3000) // 3000ms = 3 seconds
+            finish() 
+        }, 3000) 
     }
 }
