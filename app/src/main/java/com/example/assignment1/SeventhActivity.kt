@@ -14,7 +14,7 @@ class SeventhActivity : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
     private val goToEighth = Runnable {
         startActivity(Intent(this, EighthActivity::class.java))
-        // No finish(): Back from 8th returns to 7th
+        
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,14 +31,14 @@ class SeventhActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        // Reset and start fresh timer every time we show this screen
+        
         handler.removeCallbacks(goToEighth)
-        handler.postDelayed(goToEighth, 3000) // 6 seconds
+        handler.postDelayed(goToEighth, 3000) 
     }
 
     override fun onPause() {
         super.onPause()
-        // Stop timer when leaving this screen (navigating away / screen off)
+        
         handler.removeCallbacks(goToEighth)
     }
 
