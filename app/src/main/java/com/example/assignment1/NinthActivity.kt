@@ -16,7 +16,7 @@ class NinthActivity : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
     private val goToTenth = Runnable {
         startActivity(Intent(this, TenthActivity::class.java))
-        // Do NOT call finish(): back from 10th returns to 9th
+        
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +30,7 @@ class NinthActivity : AppCompatActivity() {
             insets
         }
 
-        // Camera button
+        
         findViewById<ImageView>(R.id.cameraIcon)?.setOnClickListener {
             openCamera()
         }
@@ -39,7 +39,7 @@ class NinthActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         handler.removeCallbacks(goToTenth)
-        handler.postDelayed(goToTenth, 3000) // 3 seconds
+        handler.postDelayed(goToTenth, 3000) 
     }
 
     override fun onPause() {
@@ -55,7 +55,7 @@ class NinthActivity : AppCompatActivity() {
     private fun openCamera() {
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 
-            startActivity(intent) // launches the system camera
+            startActivity(intent) 
         }
     }
 

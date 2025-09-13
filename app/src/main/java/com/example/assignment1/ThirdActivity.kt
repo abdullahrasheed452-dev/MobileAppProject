@@ -21,21 +21,21 @@ class ThirdActivity : AppCompatActivity() {
             insets
         }
 
-        // Find views
+        
         val loginButton = findViewById<TextView>(R.id.loginButton)
         val signupText = findViewById<TextView>(R.id.signupText)
 
-        // Navigate to FourthActivity when loginButton is clicked
+        
         loginButton.setOnClickListener {
             val intent = Intent(this, FourthActivity::class.java)
             startActivity(intent)
         }
 
-        // Navigate back to SecondActivity when signupText is clicked
+        
         signupText.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
-            finish() // Optional: Closes the current activity
+            finish() 
         }
     }
 }

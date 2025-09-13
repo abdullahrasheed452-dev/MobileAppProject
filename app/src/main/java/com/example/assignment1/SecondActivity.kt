@@ -28,14 +28,14 @@ class SecondActivity : AppCompatActivity() {
             startActivity(Intent(this, ThirdActivity::class.java))
         }
 
-        // Open camera on click
+        
         val loginCam = findViewById<ImageView>(R.id.ivCamera)
         loginCam.setOnClickListener {
             val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             try {
                 startActivity(cameraIntent)
             } catch (e: ActivityNotFoundException) {
-                // Optionally show a toast/log if no camera app is found
+                
             }
         }
     }

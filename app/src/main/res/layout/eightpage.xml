@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <!-- ===== TOP BAR ===== -->
+    
     <RelativeLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
@@ -56,7 +56,7 @@
             android:contentDescription="@null" />
     </RelativeLayout>
 
-    <!-- SEARCH -->
+    
     <EditText
         android:id="@+id/searchDm"
         android:layout_width="match_parent"
@@ -76,7 +76,7 @@
         android:textSize="14sp"
         android:inputType="text" />
 
-    <!-- ===== LIST (no RecyclerView) ===== -->
+    
     <ScrollView
         android:id="@+id/dmScroll"
         android:layout_width="match_parent"
@@ -91,9 +91,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- ROW helper style:
-                 avatar 56dp, two-line text, time on right, camera icon on far right -->
-            <!-- 1 -->
+            
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -153,7 +151,7 @@
                     android:contentDescription="@null"/>
             </RelativeLayout>
 
-            <!-- 2 -->
+           
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -211,7 +209,7 @@
                     android:contentDescription="@null"/>
             </RelativeLayout>
 
-            <!-- 3 -->
+            
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -269,8 +267,7 @@
                     android:src="@drawable/cam2"
                     android:contentDescription="@null"/>
             </RelativeLayout>
-
-            <!-- 4 -->
+            
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -330,7 +327,7 @@
                     android:contentDescription="@null"/>
             </RelativeLayout>
 
-            <!-- 5 -->
+            
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -389,7 +386,7 @@
                     android:contentDescription="@null"/>
             </RelativeLayout>
 
-            <!-- 6 -->
+            
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -451,7 +448,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- ===== BOTTOM CAMERA BAR ===== -->
+  
     <RelativeLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"

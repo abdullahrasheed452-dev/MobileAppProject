@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <!-- ===== TOP SEARCH BAR ===== -->
+   
     <RelativeLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
     android:paddingEnd="12dp"
     android:gravity="center_vertical">
 
-    <!-- Menu Icon (right edge) -->
+   
     <ImageView
         android:id="@+id/menuIcon"
         android:layout_width="24dp"
@@ -25,7 +25,7 @@
         android:src="@drawable/shape"
         android:contentDescription="@null" />
 
-    <!-- Search Bar Container -->
+    
     <RelativeLayout
         android:id="@+id/searchContainer"
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/search_bg">
 
-        <!-- Search Icon -->
+        
         <ImageView
             android:id="@+id/searchIcon"
             android:layout_width="20dp"
@@ -46,7 +46,7 @@
             android:src="@drawable/search"
             android:contentDescription="@null" />
 
-        <!-- EditText for Search -->
+       
         <EditText
             android:id="@+id/searchBox"
             android:layout_width="match_parent"
@@ -151,14 +151,14 @@
             android:orientation="vertical"
             android:padding="4dp">
 
-            <!-- Row 1: left stack + right tall (tidy) -->
+            
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginBottom="4dp">
 
-                <!-- LEFT: two stacked images (each 158dp to match 320dp tall right with 4dp gap) -->
+                
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -180,7 +180,7 @@
                         android:src="@drawable/img2" />
                 </LinearLayout>
 
-                <!-- RIGHT: one tall image (weights keep widths even) -->
+                
                 <ImageView
                     android:layout_width="135dp"
                     android:layout_height="match_parent"
@@ -189,7 +189,7 @@
                     android:src="@drawable/img3" />
             </LinearLayout>
 
-            <!-- Row 2: three equal cells -->
+            
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
                     android:src="@drawable/img6" />
             </LinearLayout>
 
-            <!-- Row 3: three equal cells -->
+            
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -251,7 +251,7 @@
                     android:src="@drawable/img9" />
             </LinearLayout>
 
-            <!-- Row 4: two equal large cells -->
+           
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -285,7 +285,7 @@
 
 
 
-    <!-- ===== FIXED BOTTOM NAV ===== -->
+    
 <RelativeLayout
 android:id="@+id/bottomNav"
 android:layout_width="match_parent"

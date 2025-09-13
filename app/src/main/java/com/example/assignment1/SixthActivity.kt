@@ -14,7 +14,7 @@ class SixthActivity : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
     private val goToSeventh = Runnable {
         startActivity(Intent(this, SeventhActivity::class.java))
-        // no finish(): back from 7th will return to 6th by default
+        
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +32,7 @@ class SixthActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         handler.removeCallbacks(goToSeventh)
-        handler.postDelayed(goToSeventh, 3000) // 6 seconds
+        handler.postDelayed(goToSeventh, 3000) 
     }
 
     override fun onPause() {
