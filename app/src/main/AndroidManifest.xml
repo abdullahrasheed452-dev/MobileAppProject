@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="com.abdullahrasheed.i230646">
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
+        <activity
+            android:name=".TwentyfirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TwentiethActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NineteenthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EighteenthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeventeenthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SixteenthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FifteenthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FourteenthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThirteenthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TwelfthActivity"
+            android:exported="false" />
         <activity
             android:name=".EleventhActivity"
             android:exported="false" />
